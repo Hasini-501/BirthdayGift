@@ -1,0 +1,6 @@
+{
+  "name": "Sailu's Birthday Surprise",
+  "description": "An interactive, emotional scrapbook birthday surprise website crafted with love for Sailu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

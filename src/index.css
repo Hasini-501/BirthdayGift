@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-handwriting: 'Caveat', cursive;
+    --font-display: 'Sacramento', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background-color: #FFF9F6;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+.font-display-cute {
+  font-family: 'Sacramento', cursive, sans-serif;
+}
+
+/* Scrapbook Paper Texture & Washtape */
+.paper-card {
+  background-color: #FFFFFF;
+  background-image: radial-gradient(#F5E6E8 0.75px, transparent 0.75px), radial-gradient(#F5E6E8 0.75px, #FFFFFF 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.notebook-paper {
+  background: repeating-linear-gradient(
+    #FFFDFB,
+    #FFFDFB 27px,
+    #F0E5E7 28px
+  );
+}
+
+.washi-tape {
+  background: rgba(255, 209, 220, 0.65);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+.washi-tape-lavender {
+  background: rgba(224, 215, 245, 0.65);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+.washi-tape-peach {
+  background: rgba(255, 223, 196, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+/* Custom soft scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF5F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #FBCFE8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F472B6;
+}
+
+/* Floating animation */
+@keyframes soft-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.animate-soft-float {
+  animation: soft-float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
