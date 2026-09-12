@@ -98,7 +98,7 @@ function saveCustomContentPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/',
     plugins: [react(), tailwindcss(), saveCustomContentPlugin()],
     resolve: {
       alias: {
